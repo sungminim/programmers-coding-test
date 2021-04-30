@@ -21,18 +21,21 @@
         .code {display:block;margin-bottom:5px;color:green;font-weight:bold;}
     </style>
     
-    <h1>Level 1 - 두 개 뽑아서 더하기</h1>
+    <h1>Level 1 - 나누어 떨어지는 숫자 배열</h1>
 
     <dl>
         <dt>문제 설명</dt>
         <dd>
-            정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution 함수를 완성해주세요.
+            array의 각 element 중 divisor로 나누어 떨어지는 값을 오름차순으로 정렬한 배열을 반환하는 함수, solution을 작성해주세요. <br>
+            divisor로 나누어 떨어지는 element가 하나도 없다면 배열에 -1을 담아 반환하세요.
         </dd>
         <dt>제한 조건</dt>
         <dd>
             <ul>
-                <li>numbers의 길이는 2 이상 100 이하입니다.</li>
-                <li>numbers의 모든 수는 0 이상 100 이하입니다.</li>
+                <li>arr은 자연수를 담은 배열입니다.</li>
+                <li>정수 i, j에 대해 i ≠ j 이면 arr[i] ≠ arr[j] 입니다.</li>
+                <li>divisor는 자연수입니다.</li>
+                <li>array는 길이 1 이상인 배열입니다.</li>
             </ul>
         </dd>
         <dt>입출력 예</dt>
@@ -42,21 +45,23 @@
                     <colgroup>
                         <col width="100px">
                         <col width="100px">
+                        <col width="100px">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>numbers</th>
-                            <th>result</th>
+                            <th>arr</th>
+                            <th>divisor	</th>
+                            <th>return</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>[2,1,3,4,1]</td>
-                            <td>[2,3,4,5,6,7]</td>
+                            <td>"pPoooyY"</td>
+                            <td>true</td>
                         </tr>
                         <tr>
-                            <td>[5,0,2,7]</td>
-                            <td>[2,5,7,9,12]</td>
+                            <td>"Pyy"</td>
+                            <td>false</td>
                         </tr>
                     </tbody>
                 </table>
@@ -64,31 +69,17 @@
         </dd>
         <dt>입출력 예 설명</dt>
         <dd>
-            입출력 예 #1
-            <ul>
-                <li>2 = 1 + 1 입니다. (1이 numbers에 두 개 있습니다.)</li>
-                <li>3 = 2 + 1 입니다.</li>
-                <li>4 = 1 + 3 입니다.</li>
-                <li>5 = 1 + 4 = 2 + 3 입니다.</li>
-                <li>6 = 2 + 4 입니다.</li>
-                <li>7 = 3 + 4 입니다.</li>
-                <li>따라서 [2,3,4,5,6,7] 을 return 해야 합니다.</li>
-            </ul>
-            입출력 예 #2
-            <ul>
-                <li>2 = 0 + 2 입니다.</li>
-                <li>5 = 5 + 0 입니다.</li>
-                <li>7 = 0 + 7 = 5 + 2 입니다.</li>
-                <li>9 = 2 + 7 입니다.</li>
-                <li>12 = 5 + 7 입니다.</li>
-                <li>따라서 [2,5,7,9,12] 를 return 해야 합니다.</li>
-            </ul>
+            입출력 예 #1<br>
+            'p'의 개수 2개, 'y'의 개수 2개로 같으므로 true를 return 합니다.<br>
+            <br>
+            입출력 예 #2<br>
+            'p'의 개수 1개, 'y'의 개수 2개로 다르므로 false를 return 합니다.
         </dd>
         <dt>문제 풀이</dt>
         <dd>
-            <span class="code">document.write(solution([4,6,2,3,5,7,6])) = <br></span>
+            <span class="code">document.write(solution('pPpppyyyY"')) = <br></span>
             <script>
-                document.write(solution([4,6,2,3,5,7,6]))
+                document.write(solution('pPpppyyyY"'))
             </script>
         </dd>
     </dl>
