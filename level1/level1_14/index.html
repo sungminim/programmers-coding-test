@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알고리즘 테스트</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <style>
+        * {margin:0;padding:0;}
+        body {padding:10px;}
+        ul, li, ol, li {border:0;list-style:none;}
+        dl {margin-top:50px;}
+        dl>dt {margin-bottom:10px;font-weight:bold;font-size:18px;letter-spacing:-1.5px;}
+        dl>dt:nth-child(n+2) {margin-top:20px;padding-top:20px;border-top:1px solid #dbdee1;}
+        dd ul li {position:relative;padding-left:12px;box-sizing:border-box;}
+        dd ul li:before {content:'';position:absolute;left:0;top:9px;display:block;width:5px;height:5px;background:gray}
+        td {text-align:center;}
+        .code {display:block;margin-bottom:5px;color:green;font-weight:bold;}
+    </style>
+    
+    <h1>Level 1 - 직사각형 별찍기</h1>
+
+    <dl>
+        <dt>문제 설명</dt>
+        <dd>
+            이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다. <br>
+            별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
+        </dd>
+        <dt>제한 조건</dt>
+        <dd>
+            n은 길이 10,000이하인 자연수입니다.
+        </dd>
+        <dt>입력</dt>
+        <dd>
+            5 3
+        </dd>
+        <dt>출력</dt>
+        <dd>
+            ***** <br>
+            ***** <br>
+            *****
+        </dd>
+        <dt>문제 풀이</dt>
+        <dd>
+            <span class="code">document.write(solution(5,3)) = <br></span>
+            <script>
+                
+                function solution(a,b){
+                    var star= '*'
+                    for(var i=0; i<b; i++){
+                        document.write(star.repeat(a)  + '<br>')
+                    }
+                }
+
+                solution(5,3)
+            </script>
+
+        </dd>
+    </dl>
+</body>
+</html>
