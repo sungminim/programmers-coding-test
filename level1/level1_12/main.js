@@ -1,14 +1,10 @@
-function solution(x, n) {
-    var answer = [];
+function solution(n){
+    var newArray = n.toString().split('');
+    var numArray = newArray.map(Number);
 
-    for(i = 1; i <= n; i++){
-        var a = i * x;
+    var sum = numArray.reduce((a, b) => a + b);
 
-        answer.push(a)
-    }
-
-    console.log(answer)
-    return answer
+    return sum
 }
 
-
+solution(123)

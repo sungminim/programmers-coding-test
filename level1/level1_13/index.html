@@ -19,24 +19,23 @@
         dd ul li:before {content:'';position:absolute;left:0;top:9px;display:block;width:5px;height:5px;background:gray}
         td {text-align:center;}
         .code {display:block;margin-bottom:5px;color:green;font-weight:bold;}
+        
     </style>
     
-    <h1>Level 1 - 문자열 내 마음대로 정렬하기</h1>
+    <h1>Level 1 - 서울에서 김서방 찾기</h1>
 
     <dl>
         <dt>문제 설명</dt>
         <dd>
-            문자열로 구성된 리스트 strings와, 정수 n이 주어졌을 때, 각 문자열의 인덱스 n번째 글자를 기준으로 오름차순 정렬하려 합니다. 예를 들어 strings가 ["sun", "bed", "car"]이고 n이 1이면 각 단어의 인덱스 1의 문자 "u", "e", "a"로 strings를 정렬합니다.
+            String형 배열 seoul의 element중 "Kim"의 위치 x를 찾아, "김서방은 x에 있다"는 String을 반환하는 함수, solution을 완성하세요. seoul에 "Kim"은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.
         </dd>
 
         <dt>제한 조건</dt>
         <dd>
             <ul>
-                <li>strings는 길이 1 이상, 50이하인 배열입니다.</li>
-                <li>strings의 원소는 소문자 알파벳으로 이루어져 있습니다.</li>
-                <li>strings의 원소는 길이 1 이상, 100이하인 문자열입니다.</li>
-                <li>모든 strings의 원소의 길이는 n보다 큽니다.</li>
-                <li>인덱스 1의 문자가 같은 문자열이 여럿 일 경우, 사전순으로 앞선 문자열이 앞쪽에 위치합니다.</li>
+                <li>seoul은 길이 1 이상, 1000 이하인 배열입니다.</li>
+                <li>seoul의 원소는 길이 1 이상, 20 이하인 문자열입니다.</li>
+                <li>"Kim"은 반드시 seoul 안에 포함되어 있습니다.</li>
             </ul>
         </dd>
 
@@ -46,26 +45,18 @@
                 <table>
                     <colgroup>
                         <col width="300px">
-                        <col width="200px">
                         <col width="300px">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>strings</th>
-                            <th>n</th>
+                            <th>seoul</th>
                             <th>return</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>["sun", "bed", "car"]</td>
-                            <td>1</td>
-                            <td>["car", "bed", "sun"]</td>
-                        </tr>
-                        <tr>
-                            <td>["abce", "abcd", "cdx"]	</td>
-                            <td>2</td>
-                            <td>["abcd", "abce", "cdx"]</td>
+                            <td>["Jane", "Kim"]	</td>
+                            <td>"김서방은 1에 있다"</td>
                         </tr>
                     </tbody>
                 </table>
@@ -85,11 +76,12 @@
         </dd>
         <dt>문제 풀이</dt>
         <dd>
-            <span class="code">document.write(solution([4,6,2,3,5,7,6])) = <br></span>
+            <span class="code">document.write(solution(["Jane", "Kim"])) = <br></span>
             <script>
-                document.write(solution([4,6,2,3,5,7,6]))
+                document.write(solution(["Jane", "Kim"]))
             </script>
         </dd>
     </dl>
+
 </body>
 </html>

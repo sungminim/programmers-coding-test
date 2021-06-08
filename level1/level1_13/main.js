@@ -1,12 +1,6 @@
-function solution(arr)
-{
-    var answer = [];
+function solution(seoul) {
+    var kimIndex = seoul.indexOf('Kim')
+    var answer = "김서방은 "+ kimIndex + "에 있다"
 
-    let newArr = arr.filter((value, index, array) => 
-        index != index+1
-    )
-
-    return answer;
+    return answer
 }
-
-console.log (solution([1,3,4,5,6,7]) )

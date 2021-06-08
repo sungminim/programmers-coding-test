@@ -21,18 +21,16 @@
         .code {display:block;margin-bottom:5px;color:green;font-weight:bold;}
     </style>
     
-    <h1>Level 1 - 자릿수 더하기</h1>
-
+    <h1>Level 1 - 행렬의 덧셈</h1>
     <dl>
         <dt>문제 설명</dt>
         <dd>
-            자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요. <br>
-            예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
+            행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
         </dd>
 
         <dt>제한 조건</dt>
         <dd>
-            N의 범위 : 100,000,000 이하의 자연수
+            행렬 arr1, arr2의 행과 열의 길이는 500을 넘지 않습니다.
         </dd> 
 
         <dt>입출력 예</dt>
@@ -42,21 +40,24 @@
                     <colgroup>
                         <col width="200px">
                         <col width="200px">
+                        <col width="200px">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>N</th>
-                            <th>answer</th>
+                            <th>arr1</th>
+                            <th>arr2</th>
+                            <th>return</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>123</td>
-                            <td>6</td>
+                            <td>[[1,2],[2,3]]</td>
+                            <td>[[3,4],[5,6]]</td>
+                            <td>[[4,6],[7,9]]</td>
                         </tr>
                         <tr>
-                            <td>987</td>
-                            <td>24</td>
+                            <td>[4,4,4,3,3]</td>
+                            <td>[4,3]</td>
                         </tr>
                     </tbody>
                 </table>
@@ -65,12 +66,9 @@
 
         <dt>입출력 예 설명</dt>
         <dd>
-            입출력 예 #1<br>
-            문제의 예시와 같습니다.<br>
-            <br>
-            입출력 예 #2<br>
-            9 + 8 + 7 = 24이므로 24를 return 하면 됩니다.
-        </dd> 
+            입출력 예 #1,2 <br>
+            문제의 예시와 같습니다.
+        </dd>
 
         <dt>문제 풀이</dt>
         <dd>
