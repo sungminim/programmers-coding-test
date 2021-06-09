@@ -21,16 +21,17 @@
         .code {display:block;margin-bottom:5px;color:green;font-weight:bold;}
     </style>
     
-    <h1>Level 1 - 행렬의 덧셈</h1>
+    <h1>Level 1 - 핸드폰 번호 가리기</h1>
     <dl>
         <dt>문제 설명</dt>
         <dd>
-            행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
+            프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다. 
+            전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.
         </dd>
 
         <dt>제한 조건</dt>
         <dd>
-            행렬 arr1, arr2의 행과 열의 길이는 500을 넘지 않습니다.
+            s는 길이 4 이상, 20이하인 문자열입니다.
         </dd> 
 
         <dt>입출력 예</dt>
@@ -44,20 +45,18 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>arr1</th>
-                            <th>arr2</th>
+                            <th>phone_number	</th>
                             <th>return</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>[[1,2],[2,3]]</td>
-                            <td>[[3,4],[5,6]]</td>
-                            <td>[[4,6],[7,9]]</td>
+                            <td>"01033334444"</td>
+                            <td>"*******4444"</td>
                         </tr>
                         <tr>
-                            <td>[4,4,4,3,3]</td>
-                            <td>[4,3]</td>
+                            <td>"027778888"</td>
+                            <td>"*****8888"</td>
                         </tr>
                     </tbody>
                 </table>
