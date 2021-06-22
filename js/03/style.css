@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Roboto:wght@300;400;500&display=swap');
+
+/* Reset */
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td
+{margin:0;padding:0;color:#000;-webkit-text-size-adjust:none;}
+b, span, strong, input, a, button, pre {font-size:inherit;font-family:inherit;color:inherit}
+article, aside, dialog, footer, header, section, footer, nav, figure, hgroup, details, summary, figure, figcaption {display: block;}
+html, body {height:100%;}
+body {margin:0px;overflow-x:hidden;overflow-y:scroll;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+img {border:0;max-width:100%}
+label, input, textarea, select {vertical-align:middle}
+ol, ul {list-style:none;}
+table {border-collapse:collapse;table-layout:fixed;}
+fieldset {border:none}
+hr {position:absolute;left:-1000%;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden;}
+button {margin:0;padding:0;border:none;background:none;cursor:pointer;display:inline-block;overflow:visible}
+figure {margin:0;padding:0}
+
+#container {width:100%;height:100vh;background:#D9D4CF;}
+#container .content_wrap {display:flex;height:100%;align-items:center;justify-content:center;flex-direction:column;}
+#container .content_wrap .quoteArea {position:relative;display:block;padding-left:100px;max-width:1000px;width:100%;min-height:300px;padding:85px 50px 50px 50px;margin-bottom:15px;box-sizing:border-box;background:#F0E5DE;text-align:center;font-family:'Roboto', serif;font-weight:500;letter-spacing:-1px;font-size:0;}
+#container .content_wrap .quoteArea svg  {position:absolute;left:50px;top:50px;display:inline-block;width:50px;height:50px;vertical-align:top;}
+#container .content_wrap .quoteArea svg path {fill:#D9D4CF}
+#container .content_wrap .quoteArea #quote {display:inline-block;width:calc(100% - 50px);padding-left:50px;box-sizing:border-box;vertical-align:top;text-align:left;font-family:'Roboto', serif;font-size:30px;line-height:40px;color:#7C7877;}
+#container .content_wrap .quoteArea #author {margin-top:20px;text-align:right;font-family:'Roboto', serif;font-size:25px;color:#ABD0CE}
+#container .generator  {display:block;width:200px;height:50px;margin-bottom:20px;background:#ABD0CE;box-sizing:border-box;text-align:center;line-height:50px;font-family:'Roboto', serif;font-size:18px;color:#fff;font-weight:500;letter-spacing:-0.5px;transition:0.2s all;}
+
