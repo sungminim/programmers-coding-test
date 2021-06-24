@@ -31,13 +31,13 @@ const quotes = [
 ];
 
 function randomQuote(){
-    // 랜덤한 객체배열 index 호출 
+    // 랜덤한 객체 배열 index 생성
     let randomArray = Math.floor(Math.random() * quotes.length);
     
-    // 랜덤 quote 
+    // 랜덤 quote index
     let randomQuote = quotes[randomArray].quote
     
-    //랜덤 author
+    //랜덤 author index 
     let randomAuthor = quotes[randomArray].author
 
     // 랜덤한 quote, autohr HTML에 대입
